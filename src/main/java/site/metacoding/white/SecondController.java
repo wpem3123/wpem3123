@@ -33,8 +33,8 @@ public class SecondController {
 			return "title:"+title+", content " +content; // body에 담아서 보내줘야함.
 		}
 	@DeleteMapping("/second/{id}") 
-	public String deleteData(@PathVariable Integer id) {  // 스프링 파싱 기본전략 : x-www-form-머시기 
-		return id+"delete ok"; // body에 담아서 보내줘야함.
+	public String deleteData(@PathVariable Integer id) {  
+		return id+"delete ok"; // 
 	}
 }
 
